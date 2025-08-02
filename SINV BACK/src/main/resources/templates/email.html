@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restablecer Contraseña | SINV</title>
+</head>
+<body style="margin: 0; padding: 40px 20px; background: linear-gradient(135deg, #0f172a, #1e293b); font-family: 'Segoe UI', sans-serif; color: #f1f5f9;">
+
+<div style="max-width: 620px; margin: auto; background: rgba(30,41,59,0.85); border-radius: 20px; border: 1px solid rgba(148,163,184,0.25); box-shadow: 0 0 40px rgba(34,211,238,0.1), 0 0 80px rgba(124,58,237,0.07); backdrop-filter: blur(14px); overflow: hidden;">
+
+    <div style="background: linear-gradient(135deg, #7c3aed, #0ea5e9); padding: 32px; text-align: center;">
+        <h1 style="margin: 0; font-size: 26px; color: #ffffff; letter-spacing: 1px;">🔐 Recuperación de Contraseña</h1>
+        <p style="font-size: 15px; color: #e0f2fe; margin-top: 8px;">Sistema de Gestión de Almacenes <strong style="color: #facc15;">SINV</strong></p>
+    </div>
+
+    <div style="padding: 40px 36px;">
+        <p style="font-size: 17px; margin-bottom: 20px;">Hola,</p>
+        <p style="font-size: 15px; color: #cbd5e1; line-height: 1.6;">
+            Hemos recibido una solicitud para restablecer tu contraseña. Por favor, copia el siguiente código y pégalo en la sección correspondiente:
+        </p>
+
+        <div style="background: #1e293b; color: #a78bfa; padding: 24px 32px; border: 2px dashed #8b5cf6; border-radius: 16px; font-size: 30px; font-weight: bold; text-align: center; margin: 32px 0; letter-spacing: 5px; font-family: 'Courier New', monospace;"
+             th:text="${token}">[CÓDIGO]</div>
+
+        <p style="font-size: 13px; color: #94a3b8; text-align: center; font-style: italic; margin-top: -12px;">
+            Este código tiene una validez de <strong>30 minutos</strong>.
+        </p>
+
+        <div style="margin: 42px 0; text-align: center;">
+            <a href="http://localhost:5173/reset-password"
+               style="display: inline-block; background: linear-gradient(to right, #7c3aed, #0ea5e9); color: #ffffff; padding: 16px 40px; border-radius: 9999px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 6px 30px rgba(14,165,233,0.3); transition: background 0.3s ease;">
+                Restablecer Contraseña
+            </a>
+        </div>
+
+        <div style="background-color: rgba(253,224,71,0.06); padding: 18px 22px; border-radius: 14px; font-size: 14px; color: #facc15; border-left: 5px solid #facc15;">
+            ⚠️ Por seguridad, no compartas este código. Si no solicitaste este cambio, puedes ignorar este mensaje y tu contraseña seguirá segura.
+        </div>
+    </div>
+
+    <div style="font-size: 12px; color: #64748b; text-align: center; padding: 20px; border-top: 1px solid rgba(148,163,184,0.15); background-color: rgba(15,23,42,0.85);">
+        <p>Este es un mensaje automático generado por el sistema SINV. No respondas a este correo.</p>
+        <p>&copy; 2025 <strong style="color: #8b5cf6;">SINV</strong>. Todos los derechos reservados.</p>
+    </div>
+
+</div>
+</body>
+</html>

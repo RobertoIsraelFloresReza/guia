@@ -1,0 +1,37 @@
+.fondo{
+  background-image: url("../../assets/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;    
+  height: 100vh;
+}
+
+.wrapper {
+  position:relative;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;    
+  padding: 4px;
+  position: absolute;
+  box-sizing:border-box;
+  top:43%;
+  left:2px;
+  transform: translateY(-50%);
+  color: #a2160f94;
+}
+
+.input {
+  height: 50px;
+  box-sizing:border-box;
+  padding-left: 2rem !important;
+}
+.image-container,
+.form-container {
+  height: 500px; /* o cualquier otra altura que necesites */
+}
+.bg-img-red{
+  background-color: #a2160f94;
+}
+

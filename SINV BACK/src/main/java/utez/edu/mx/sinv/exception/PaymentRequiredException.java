@@ -8,10 +8,10 @@ public class PaymentRequiredException extends Throwable {
     public PaymentRequiredException(String message, Throwable cause) {
         super(message, cause);
     }
-
     public PaymentRequiredException(Throwable cause) {
         super(cause);
     }
+
     public PaymentRequiredException() {
         super("Payment is required to access this resource.");
     }

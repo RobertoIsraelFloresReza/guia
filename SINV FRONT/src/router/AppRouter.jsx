@@ -1,21 +1,21 @@
 import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AuthContext from "../config/context/auth-context";
-import AdminLayout from "../module/admingeneral/AdminLayout";
-import TrabajadorLayout from "../module/admingrupal/TrabajadorLayout";
+import AdminLayout from "../module/admin/AdminLayout";
+import TrabajadorLayout from "../module/trabajador/TrabajadorLayout";
 import ForgotPasswordPage from "../module/auth/ForgotPasswordPage";
 import ResetPasswordPage from "../module/auth/ResetPasswordPage";
-import Home from "../module/admingeneral/Home";
-import HomeT from "../module/admingrupal/HomeAdminG";
+import Home from "../module/admin/Home";
+import HomeT from "../module/trabajador/HomeT";
 import SignInPage from "../module/auth/SingInpage";
 import NotFound from "../components/NotFound";
-import Profile from "../module/admingeneral/Profile";
+import Profile from "../module/admin/Profile";
 import CreateUserPage from "../module/auth/CreateUserPage";
-import Responsables from "../module/admingeneral/Responsables";
-import Storages from "../module/admingeneral/Storages";
-import Categories from "../module/admingeneral/Categories";
-import Articles from "../module/admingeneral/Articles";
-import Storage from "../module/admingrupal/Storage";
+import Responsables from "../module/admin/Responsables";
+import Storages from "../module/admin/Storages";
+import Categories from "../module/admin/Categories";
+import Articles from "../module/admin/Articles";
+import Storage from "../module/trabajador/Storage";
 
 const AppRouter = () => {
   const { user } = useContext(AuthContext);

@@ -918,7 +918,6 @@ const Storage = () => {
                         <FaBoxes className="text-3xl text-cyan-400" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-2">No tienes un almacén asignado</h3>
-                    <p className="text-gray-400 mb-2">Usuario ID: {userId}</p>
                     <p className="text-gray-400 mb-6">Contacta al administrador para que te asigne un almacén</p>
                     <button
                         onClick={() => window.location.reload()}
